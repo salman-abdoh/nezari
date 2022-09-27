@@ -3,9 +3,8 @@
 $lang =app()->getLocale() == "ar" ?'arabic.css':'main.css';
 $cssf=app()->getLocale() == "ar" ?'fas fa-angle-double-left':'fas fa-angle-double-right';
 ?>
-<html 
-lang="{{ str_replace('_', '-', app()->getLocale())}} 
-"data-textdirection="{{ str_replace('_', '-', app()->getLocale()) == 'ar'? 'rtl' : 'ltr'}}" >
+<html lang="{{ str_replace('_', '-', app()->getLocale())}} 
+" data-textdirection="{{ str_replace('_', '-', app()->getLocale()) == 'ar'? 'rtl' : 'ltr'}}">
 
 <head>
   <title>Nezari</title>
@@ -13,7 +12,7 @@ lang="{{ str_replace('_', '-', app()->getLocale())}}
   <meta name="keywords" content="Nezari,Nezari, drogs, Nezari">
   <meta name="author" content="salman">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>	
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
   <link id="css" rel="stylesheet" href='{{ asset('css/bootstrap.css')}}'>
   <link href='{{ asset('css/animate.css')}}' rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
@@ -22,8 +21,8 @@ lang="{{ str_replace('_', '-', app()->getLocale())}}
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <link href='{{ asset('fonts/fontawesome-free-6.0.0-beta3-web/css/all.css')}}' rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&family=Tajawal:wght@500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&family=Tajawal:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <body dir="{{(App::isLocale('ar') ? 'rtl' : 'ltr')}}">
@@ -42,12 +41,11 @@ lang="{{ str_replace('_', '-', app()->getLocale())}}
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class=" navbar-brand  text-center p-0" href="{{ asset ('index')}}"><img  src='{{ asset('img/LL.png')}}'></a>
+      <a class=" navbar-brand  text-center p-0" href="{{ asset ('index')}}"><img src='{{ asset('img/LL.png')}}'></a>
 
       <div class="collapse navbar-collapse" id="navbarNavDropdown" style=" justify-content: space-around;">
 
-        <ul class="navbar-nav  mr-auto mt-2 mt-lg-0" style="    
-        ">
+        <ul class="navbar-nav  mr-auto mt-2 mt-lg-0" >
           <li class="nav-item active">
             <a class="nav-link px-4 {{request()->is('index') ? 'active' : ''}}" href="{{ asset ('index')}}">
               {{ __("Home") }} </a>
@@ -69,91 +67,110 @@ lang="{{ str_replace('_', '-', app()->getLocale())}}
             <a class="nav-link px-4  {{request()->is('about') ? 'active' : ''}}" href="{{ asset ('about')}}">
               {{ __("About Us") }}</a>
           </li>
-          <div class="nav-item dropdown " >
-  <a class=" nav-link dropdown-toggle" style="      color: #000000; "  href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-     {{ __("Language") }} </a>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="  color: #6c757d;    background :rgba(252, 252, 252,7); text-align: center;">
-    <li><a style="  text-align: center;" class="dropdown-item" href="#"> @foreach (Config::get('languages') as $lang => $language)
-      
-           
-                    <a class="dropdown-item" style="text-align: center;font-size:14px; " href="{{ route('lang.switch', $lang) }}"><img style="    margin: 0;
-    width: 23px;" src='{{ asset('img/'.$language['flag-icon'])}}'> {{$language['display']}}</a>
-          
-        @endforeach</a></li>
-   
-  </ul>
+          <div class="nav-item dropdown ">
+            <a class=" nav-link dropdown-toggle" style="      color: #000000; " href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+              {{ __("Language") }} </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="  color: #6c757d;    background :rgba(252, 252, 252,7); text-align: center;">
+              <li><a style="  text-align: center;" class="dropdown-item" href="#"> @foreach (Config::get('languages') as $lang => $language)
 
-       
-</div>
-            
+
+                  <a class="dropdown-item" style="text-align: center;font-size:14px; " href="{{ route('lang.switch', $lang) }}"><img style="    margin: 0;
+    width: 23px;" src='{{ asset('img/'.$language['flag-icon'])}}'> {{$language['display']}}</a>
+
+                  @endforeach</a></li>
+
+            </ul>
+
+
+          </div>
+
         </ul>
-   
-    
+
+
       </div>
 
 
     </nav>
 
-   
-      <!-- Intro -->
+
+    <!-- Intro -->
     <div>
-      <div id="carouselExampleControls m-0"  style="        max-height: 500px;
-"  class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner h-50">
-    <div class="carousel-item active h-50"  style="    height:500px;
+      <div id="carouselExampleControls m-0" style="        max-height: 500px;
+" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner h-50">
+          <div class="carousel-item active h-50" style="    height:500px;
 ">
-<div  class="d-block w-100 bg-image vh-50" style="height: 500px;
+            <div class="d-block w-100 bg-image vh-50" style="height: 500px;
                 background-image: url('{{ asset('img/pexels-burst-374079.jpg')}}') ;background-size: cover;
+                background-position: center; 
+  background-repeat: no-repeat; 
               ">
-              
-    </div>
-    <div  class="text  d-md-block m-auto"><h3>{{ __("Welcome To AL-NZARE")}}</h3>
-    </div>
+
+            </div>
+            <div class="text  d-md-block m-auto">
+              <h3>
+                {{ __("Welcome To AL-NZARE")}}
+              </h3>
+            </div>
 
 
-</div>
-    <div class="carousel-item h-50" style="    height: 500px;
+          </div>
+          <div class="carousel-item h-50" style="    height: 500px;
 ">
-<div id="intro" class="d-block w-100 bg-image vh-50" style="height: 500px;
-                background-image: url('{{ asset('img/bodycare.jpg')}}') ;background-size: cover;
+            <div id="intro" class="d-block w-100 bg-image vh-50" style="height: 500px;
+                background-image: url('{{ asset('img/Dg3oR21X4AEpqi4 (1).jpg')}}') ;    background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
               ">
-     
-    </div>
-    <div  class="text  d-md-block m-auto"><h3 class="text2">{{ __("Maintenance")}}</h3>
-    </div>
-  </div>
-  <div class="carousel-item  h-50"  style="    height:500px;
+
+            </div>
+            <div class="text  d-md-block m-auto">
+              <h3 class="text2">
+                {{ __("Maintenance")}}
+              </h3>
+            </div>
+          </div>
+          <div class="carousel-item  h-50" style="    height:500px;
 ">
-<div  class="d-block w-100 bg-image vh-50" style="height: 500px;
-                background-image: url('{{ asset('img/pexels-burst-374079.jpg')}}') ;background-size: cover;
+            <div class="d-block w-100 bg-image vh-50" style="height: 500px;
+                background-image: url('{{ asset('img/cardiac-catheterization1.jpg')}}') ; background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
               ">
-              
-    </div>
-    <div  class="text  d-md-block m-auto"><h3 class="text2">{{ __("Medical Equipment")}}</h3>
-    </div>
+
+            </div>
+            <div class="text  d-md-block m-auto">
+              <h3 class="text2">
+                {{ __("Medical Equipment")}}
+              </h3>
+            </div>
 
 
-</div>
-<div class="carousel-item  h-50"  style="    height:500px;
+          </div>
+          <div class="carousel-item  h-50" style="    height:500px;
 ">
-<div  class="d-block w-100 bg-image vh-50" style="height: 500px;
-                background-image: url('{{ asset('img/pexels-burst-374079.jpg')}}') ;background-size: cover;
+            <div class="d-block w-100 bg-image vh-50" style="height: 500px;
+                background-image: url('{{ asset('img/bodycare.jpg')}}') ;background-size: cover;background-position: center; 
+  background-repeat: no-repeat; 
               ">
-              <div  class="text  d-md-block m-auto"><h3 class="text2" > {{ __("Cosmetic")}}</h3>  
-    </div>
-    
-    </div>
+              <div class="text  d-md-block m-auto">
+                <h3 class="text2">
+                  {{ __("Aesthetics")}}
+                </h3>
+              </div>
+
+            </div>
 
 
-</div>
-  </div>
- 
-</div>
-    
-      
+          </div>
+        </div>
+
+      </div>
+
+
       <!-- Intro -->
-   
-    <!--Section: Design Block-->
+
+      <!--Section: Design Block-->
   </header>
 
   <!--end header-->
@@ -212,11 +229,13 @@ lang="{{ str_replace('_', '-', app()->getLocale())}}
           <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
             <!-- Content -->
             <h6 class="text-uppercase fw-bold mb-2.5">
-              <i class="fas fa-gem me-1 "></i>{{ __("AL-Nezari")}}
+              <i class="fas fa-gem me-1 "></i>
+              {{ __("AL-Nezari")}}
             </h6>
             <div class="underlinedive"></div>
             <p style="margin-top: 17px; ">
-{{__('ar.aboutn')}}            </p>
+              {{__('ar.aboutn')}}
+            </p>
           </div>
           <!-- Grid column -->
 
@@ -230,7 +249,9 @@ lang="{{ str_replace('_', '-', app()->getLocale())}}
             <div>
               @foreach($category as $item )
               <p>
-              <p class="text-reset">{{ $item->{app()->getLocale().('_title')} }}</p>
+              <p class="text-reset">
+                {{ $item->{app()->getLocale().('_title')} }}
+              </p>
               </p>
               @endforeach
             </div>

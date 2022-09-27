@@ -87,19 +87,20 @@
 
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               <a href="#" class="nav-link   text-right" style="text-align: end; ">Read more
-                 <i class="fas fa-angle-double-right"  style=" color: #1d4c84;"></i></a></div>
+                <i class="fas fa-angle-double-right" style=" color: #1d4c84;"></i></a>
+            </div>
           </div>
         </div>
-        
+
         <div class="col col-md-3 ">
-          <div class="card  h-100 mb-4  border-dark" style="background :#1d4c84 ; color: #f8f9fa;" >
+          <div class="card  h-100 mb-4  border-dark" style="background :#1d4c84 ; color: #f8f9fa;">
             <img class="card-img-top" src="../img/IMG_4102.JPG" alt="Card image cap">
             <div class="card-body ">
               <h4 class="card-title">Card title</h4>
               <div class="underlinedive text-center mb-3 " style="background-color: #d62626; width: 50px;"></div>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               <a href="#" class="nav-link " style="text-align: end; ">Read more
-                 <i class="fas fa-angle-double-right " style=" color: #d62626;"></i></a>
+                <i class="fas fa-angle-double-right " style=" color: #d62626;"></i></a>
             </div>
           </div>
         </div>
@@ -111,8 +112,9 @@
               <div class="underlinedive text-center mb-3 " style="width: 50px;"></div>
 
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="nav-link text-right" style="text-align: end; ">Read more 
-                <i class="fas fa-angle-double-right"  style=" color: #1d4c84;"></i></a>            </div>
+              <a href="#" class="nav-link text-right" style="text-align: end; ">Read more
+                <i class="fas fa-angle-double-right" style=" color: #1d4c84;"></i></a>
+            </div>
           </div>
         </div>
         <div class="col col-md-3 ">
@@ -124,46 +126,47 @@
 
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               <a href="#" class="nav-link text-right" style="text-align: end; ">Read more
-               <i class="fas fa-angle-double-right" style=" color: #d62626;"></i></a>  </div>
+                <i class="fas fa-angle-double-right" style=" color: #d62626;"></i></a>
             </div>
           </div>
         </div>
-
       </div>
-    </div>
-    <!--campny start-->
-    <br><br><br>
-    <div class="container px-4 py-3 mt-3" id="icon-grid" style="direction: rtl;">
-      <h1 class="headerh text-center mb-1 border-bottom pb-3 ">شركائنا </h1>
 
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
-        <div class="col-lg-2 d-flex" style="    flex-direction: column;
-        align-items: center;">
-          <div class="border-radius"><img src="./../img/pngegg (3).png " height="100px" width="100px" alt="" style=" height: 100px;   border-radius: 50%">
-          </div>
-          <h4 class="pt-2">جيت هب</h2>
-
-        </div>
-        <div class="col-lg-2 d-flex" style="    flex-direction: column;
-        align-items: center;">
-          <div class="border-radius"><img src="./../img/pngegg (4).png " height="100px" width="100px" alt="" style=" height: 100px;   border-radius: 50%">
-          </div>
-          <h4 class="pt-2">وورد بريس</h2>
-
-        </div>
-
-        <div class="col-lg-2 d-flex" style="    flex-direction: column;
-        align-items: center;">
-          <div class="border-radius"><img src="./../img/pngegg (4).png" height="100px" width="100px" alt="" style=" height: 100px;   border-radius: 50%">
-          </div>
-          <h4 class="pt-2">جوجل </h2>
-
-        </div>
-      </div>
-      <div>
     </div>
   </div>
-  
+  <!--campny start-->
+  <br><br><br>
+  <div class="container px-4 py-3 mt-3" id="icon-grid" style="direction: rtl;">
+    <h1 class="headerh text-center mb-1 border-bottom pb-3 ">شركائنا </h1>
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+      <div class="col-lg-2 d-flex" style="    flex-direction: column;
+        align-items: center;">
+        <div class="border-radius"><img src="./../img/pngegg (3).png " height="100px" width="100px" alt="" style=" height: 100px;   border-radius: 50%">
+        </div>
+        <h4 class="pt-2">جيت هب</h2>
+
+      </div>
+      <div class="col-lg-2 d-flex" style="    flex-direction: column;
+        align-items: center;">
+        <div class="border-radius"><img src="./../img/pngegg (4).png " height="100px" width="100px" alt="" style=" height: 100px;   border-radius: 50%">
+        </div>
+        <h4 class="pt-2">وورد بريس</h2>
+
+      </div>
+
+      <div class="col-lg-2 d-flex" style="    flex-direction: column;
+        align-items: center;">
+        <div class="border-radius"><img src="./../img/pngegg (4).png" height="100px" width="100px" alt="" style=" height: 100px;   border-radius: 50%">
+        </div>
+        <h4 class="pt-2">جوجل </h2>
+
+      </div>
+    </div>
+    <div>
+    </div>
+  </div>
+
 
   <!--end jobs-->
   <!--company-->
