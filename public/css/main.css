@@ -47,20 +47,20 @@ text-align: center;
 .carousel-inner .carousel-item .text h3{
   background: rgba(255, 255, 255, 0.493);
   padding: 45px;
-  border-radius: 3px;
+  border-radius: 20px;
   margin: auto;
   width: 48%;
   color:#043c6d;
-
+  text-transform: uppercase;
 }
 .carousel-inner .carousel-item .text .text2{
   background:#043c6d85 ;
   padding: 45px;
-  border-radius: 3px;
+  border-radius: 20px;
   margin: auto;
   width: 48%;
   color:rgba(255, 255, 255, 0.993);
-
+  text-transform: uppercase;
 }
 .navbar-scroll .nav-link,
 .navbar-scroll .navbar-toggler-icon,
@@ -168,7 +168,11 @@ padding: 0px;
 margin: 0px;
 }
 .navbar a img{
-  margin-left: 40px; HEIGHT: AUTO;WIDTH: 60PX;
+  margin-left:40px; HEIGHT: AUTO;WIDTH: 60PX;
+}
+.navbar .navbar-toggler{
+  border: none;
+  margin-top: 5px;
 }
 .navbar-nav li a{
   position: relative;
@@ -183,7 +187,9 @@ font-size: larger;
     transition: all ease-in-out 250ms;
     border-bottom: 2px #1d4c84 solid;
 } */
-
+.navbar .collapse{
+  justify-content: space-around;
+}
 .navbar .collapse .navbar-nav li a:hover {
   font-size: 20px;
   color: #1d4c84 !important;
@@ -857,30 +863,39 @@ h1{
   text-decoration: none;
   cursor: pointer;
 }
-
+.wow {
+  visibility: hidden;
+}
 /* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 991px){.navbar a img{
+  position: absolute;
+  top: 8px;
+  left: 12px; HEIGHT: AUTO;WIDTH: 60PX;
+  margin-left: 0px;
+}}
 @media only screen and (max-width: 700px){
   .modal-content {
     width: 100%;
     
   }
+  
   .carousel-inner .carousel-item .text h3{
     background: rgba(255, 255, 255, 0.493);
     padding: 45px;
-    border-radius: 3px;
+    border-radius: 20px;
     margin: auto;
     width: 90%;
     color:#043c6d;
-  
+    text-transform: uppercase;
   }
   .carousel-inner .carousel-item .text .text2{
     background:#043c6d85 ;
     padding: 45px;
-    border-radius: 3px;
+    border-radius: 20px;
     margin: auto;
     width: 90%;
     color:rgba(255, 255, 255, 0.993);
-  
+    text-transform: uppercase;
   }
 }
 /*--------------------------------------------------------------

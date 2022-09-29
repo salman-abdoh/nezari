@@ -23,26 +23,26 @@
 
     <div class="section-title">
       <h2>{{__('Products')}}</h2>
-      <p>{{__('our new products')}}</p>
+      <p>{{__('our new')}}</p>
     </div>
 
     <div class="row  pb-3">
       @forelse($products as $item )
-      <div class="col-12 col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+      <div class="col-12 col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-3" >
         <div class="card col-sm-12  h-100 mb-4 " style="overflow: hidden; background :#f0f4f8;">
           <img class="card-img-top" src='{{ asset('storage/'.$item->image)}}' alt="Card image cap">
-          <div class="card-body ">
+          <div class="card-body" >
             <h4 class="card-title">
               {{ $item->{app()->getLocale().('_title')} }}
             </h4>
             <div class="underlinedive text-center mb-3 " style="width: 50px;"></div>
-            <p class="card-text" style="    height: 142px;
+            <p class="card-text" style="      text-align: justify;  height: 142px;
               overflow: hidden;
               text-overflow: clip;">
               {{ $item->{app()->getLocale().('_description')} }}
             </p>
 
-            <a href="/show/{{$item['id']}}" class="nav-link   text-right">{{__('Read More')}}
+            <a href="/show/{{$item['id']}}" class="nav-link   text-right">{{__('More Details')}}
               <?php
                  $cssf=app()->getLocale() == "ar" ?'fas fa-angle-double-left':'fas fa-angle-double-right';
                  ?>

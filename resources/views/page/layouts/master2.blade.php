@@ -38,12 +38,13 @@ $css=app()->getLocale() == "ar" ?'fas fa-angle-double-left':'fas fa-angle-double
   <header>
     <!-- Navbar -->
     <nav class="rows  navbar navbar-expand-lg navbar-primarys fixed-top mask-custom shadow-0">
+      
+      <a class=" navbar-brand  text-center p-0" href="{{ asset ('index')}}"><img src='{{ asset('img/LL.png')}}'></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class=" navbar-brand  text-center m-auto " href="{{ asset ('index')}}"><img style="    margin-left: 40px; HEIGHT: AUTO;WIDTH: 60PX;" src='{{ asset('img/LL.png')}}'></a>
-
       <div class="collapse navbar-collapse" id="navbarNavDropdown" style=" justify-content: space-around;">
+
 
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           <li class="nav-item active">

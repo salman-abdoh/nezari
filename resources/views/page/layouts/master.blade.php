@@ -9,20 +9,20 @@ $cssf=app()->getLocale() == "ar" ?'fas fa-angle-double-left':'fas fa-angle-doubl
 <head>
   <title>Nezari</title>
   <meta charset="UTF-8">
-  <meta name="keywords" content="Nezari,Nezari, drogs, Nezari">
+  <meta name="keywords" content="Nezari,منتجات, drogs, Products">
+  <meta name="description" content="Al-Nezari for Import is considered one of the majors medical equipment, cosmetic, pharmaceutical and body care distributors also maintenance of medical and laser devices in the territory and occupies leadership position in the area and aspired to be an agent of the best companies medical and pharmaceutical in the world">
   <meta name="author" content="salman">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
   <link id="css" rel="stylesheet" href='{{ asset('css/bootstrap.css')}}'>
-  <link href='{{ asset('css/animate.css')}}' rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   <link id="css" rel="stylesheet" href='{{ asset('css/'. $lang )}}'>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <link href='{{ asset('fonts/fontawesome-free-6.0.0-beta3-web/css/all.css')}}' rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&family=Tajawal:wght@500&display=swap" rel="stylesheet">
+
 </head>
 
 <body dir="{{(App::isLocale('ar') ? 'rtl' : 'ltr')}}">
@@ -38,33 +38,33 @@ $cssf=app()->getLocale() == "ar" ?'fas fa-angle-double-left':'fas fa-angle-doubl
     <!-- Navbar -->
 
     <nav class="rows  navbar navbar-expand-lg navbar-primarys fixed-top mask-custom shadow-0">
+     
+      <a class=" navbar-brand  text-center p-0" href="{{ asset ('index')}}"><img src='{{ asset('img/LL.png')}}'></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class=" navbar-brand  text-center p-0" href="{{ asset ('index')}}"><img src='{{ asset('img/LL.png')}}'></a>
-
       <div class="collapse navbar-collapse" id="navbarNavDropdown" style=" justify-content: space-around;">
 
         <ul class="navbar-nav  mr-auto mt-2 mt-lg-0" >
           <li class="nav-item active">
-            <a class="nav-link px-4 {{request()->is('index') ? 'active' : ''}}" href="{{ asset ('index')}}">
+            <a class="nav-link px-4 {{request()->is('index') ? 'active': ''}}" href="{{ asset ('index')}}">
               {{ __("Home") }} </a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link px-4  {{request()->is('index#Products') ? 'active' : ''}}" href="#products">
+            <a class="nav-link px-4  {{request()->is('index#Products') ? 'active': ''}}" href="#products">
               {{ __("Our Products") }}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link px-4  {{request()->is('index#services') ? 'active' : ''}}" href="#services">
+            <a class="nav-link px-4  {{request()->is('index#services') ? 'active': ''}}" href="#services">
               {{ __("Our Services") }}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link px-4  {{request()->is('contact') ? 'active' : ''}}" href="{{ asset ('contact')}}">
+            <a class="nav-link px-4  {{request()->is('contact') ? 'active': ''}}" href="{{ asset ('contact')}}">
               {{ __("Contact Us") }}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link px-4  {{request()->is('about') ? 'active' : ''}}" href="{{ asset ('about')}}">
+            <a class="nav-link px-4  {{request()->is('about') ? 'active': ''}}" href="{{ asset ('about')}}">
               {{ __("About Us") }}</a>
           </li>
           <div class="nav-item dropdown ">
@@ -295,7 +295,16 @@ $cssf=app()->getLocale() == "ar" ?'fas fa-angle-double-left':'fas fa-angle-doubl
   <!--End footetr-->
   <!--java script file-->
   <script src='{{ asset('javascript/jquery-3.6.0.min.js')}}'></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.js"integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
   <script src='{{ asset('javascript/app.js')}}'></script>
+ 
+  
+
 </body>
 
 

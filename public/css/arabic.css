@@ -40,19 +40,21 @@ body{
   .carousel-inner .carousel-item .text h3{
     background: rgba(255, 255, 255, 0.493);
     padding: 45px;
-    border-radius: 3px;
     margin: auto;
     width: 50%;
     color:#043c6d;
+    border-radius: 20px;
+
   
   }
   .carousel-inner .carousel-item .text .text2{
     background:#043c6db0 ;
     padding: 45px;
-    border-radius: 3px;
     margin: auto;
     width: 50%;
     color:rgba(255, 255, 255, 0.993);
+    border-radius: 20px;
+
   
   
   }
@@ -161,7 +163,11 @@ nav{
    
 }
 .navbar a img{
-    margin-right: 40px; HEIGHT: AUTO;WIDTH: 60PX;
+  margin-right: 40px; HEIGHT: AUTO;WIDTH: 60PX;
+}
+.navbar .navbar-toggler{
+  border: none;
+  margin-top: 5px;
 }
 .navbar-nav{
     direction: rtl;
@@ -862,6 +868,12 @@ section{
 }
 .modal-header{border: none;}
 /* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 991px){.navbar a img{
+  position: absolute;
+  top: 8px;
+  right: 12px; HEIGHT: AUTO;WIDTH: 60PX;
+  margin-right: 0px;
+}}
 @media only screen and (max-width: 700px){
   .modal-content {
     width: 100%;
@@ -870,21 +882,24 @@ section{
   .carousel-inner .carousel-item .text h3{
     background: rgba(255, 255, 255, 0.493);
     padding: 45px;
-    border-radius: 3px;
+    border-radius: 20px;
     margin: auto;
     width: 92%;
     color:#043c6d;
-  
+    border-radius: 20px;
+
   }
   .carousel-inner .carousel-item .text .text2{
     background:#043c6d85 ;
   padding: 45px;
-  border-radius: 3px;
+  border-radius: 20px;
   margin: auto;
   width: 90%;
   color:rgba(255, 255, 255, 0.993);
+  border-radius: 20px;
 
   }
+  
 }
 /*--------------------------------------------------------------
   # products Details
