@@ -24,7 +24,7 @@
 </div>
 @endif
 
-<section id="contact" class="contact">
+<section id="contact" class="contact  " data-wow-offset="150">
 
   <div class="container" data-aos="fade-up">
 
@@ -116,11 +116,7 @@
             <small class="text-danger">{{$message }}</small>
             @enderror
           </div>
-          {{-- <div class="my-3">--}}
-          {{-- <div class="loading">Loading</div>--}}
-          {{-- <div class="error-message"></div>--}}
-          {{-- <div class="sent-message">Your message has been sent. Thank you!</div>--}}
-          {{-- </div>--}}
+         
           <div class="text-center"><button type="submit">
               {{ __('Send Message')}}</button></div>
         </form>

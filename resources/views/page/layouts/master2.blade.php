@@ -9,9 +9,14 @@ $css=app()->getLocale() == "ar" ?'fas fa-angle-double-left':'fas fa-angle-double
 <head>
   <title>Nezari</title>
   <meta charset="UTF-8">
-  <meta name="keywords" content="Nezari,Nezari, drogs, Nezari">
+  <meta name="keywords" content="Nezari,منتجات, drogs, Products">
+  <meta name="description" content="Al-Nezari for Import is considered one of the majors medical equipment, cosmetic, pharmaceutical and body care distributors also maintenance of medical and laser devices in the territory and occupies leadership position in the area and aspired to be an agent of the best companies medical and pharmaceutical in the world">
   <meta name="author" content="salman">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href='{{ asset('animate.css/animate.css')}}'>
+  <link rel="stylesheet" href='{{ asset('css/animated.min.css')}}'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
   <link id="css" rel="stylesheet" href='{{ asset('css/bootstrap.css')}}'>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
@@ -46,7 +51,7 @@ $css=app()->getLocale() == "ar" ?'fas fa-angle-double-left':'fas fa-angle-double
       <div class="collapse navbar-collapse" id="navbarNavDropdown" style=" justify-content: space-around;">
 
 
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
           <li class="nav-item active">
             <a class="nav-link px-4 {{request()->is('index') ? 'active' : ''}}" href="{{ asset ('index')}}">
               {{ __("Home") }} </a>

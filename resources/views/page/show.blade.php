@@ -1,7 +1,7 @@
 @extends('page.layouts.master2')
 
 @section('content')
-<section id="products-details" class="products-details mt-3">
+<section id="products-details" class="products-details mt-3 ">
 
   <div class="container">
     <div class="section-title">
@@ -15,7 +15,7 @@
       <div class="col-lg-7">
 
         <!--Bootstrap modal -->
-        <div id="carouselExampleControls h-50" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleControls h-50" class="carousel slide " data-wow-delay=".5s" data-bs-ride="carousel">
           <div class="carousel-inner h-50">
             <div class="carousel-item active h-50">
               <img id="myImg" src="{{ asset('storage/'.$data->image)}}" alt="nezari" class="d-block" style="width:100%">
@@ -69,8 +69,8 @@
 
       </div>
 
-      <div class="col-lg-5 ">
-        <div class="products-info">
+      <div class="col-lg-5" data-wow-delay=".5s" >
+        <div class="products-info ">
           <h3>{{__("Product Information")}}</h3>
           <ul>
             <li><strong>{{__("Category")}} </strong> : {{$data->category->{app()->getLocale().('_title')} }}</li>

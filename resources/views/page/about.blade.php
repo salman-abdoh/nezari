@@ -2,10 +2,10 @@
 
 @section('content')
 @forelse($data as $item )
-<section class="section section-padding pb-0">
+<section class="section section-padding pb-0 " data-wow-offset="150">
   <div class="container ">
 
-    <div class="row learts-mb-n30 animate_animated wow animate_zoomIn">
+    <div class="row learts-mb-n30 ">
 
       <div class="col-md-6 col-12 align-self-center learts-mb-30">
         <div class="section-title mb-30">
@@ -38,7 +38,7 @@
 </section>
 <!--end about-->
 <!-- ======= Featured Section ======= -->
-<section id="featured" class="featured">
+<section id="featured" class="featured " data-wow-delay=".5s">
   <div class="container mb-4 mt-4">
 
     <div class="row text-center ">

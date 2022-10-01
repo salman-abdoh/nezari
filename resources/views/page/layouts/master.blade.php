@@ -13,6 +13,9 @@ $cssf=app()->getLocale() == "ar" ?'fas fa-angle-double-left':'fas fa-angle-doubl
   <meta name="description" content="Al-Nezari for Import is considered one of the majors medical equipment, cosmetic, pharmaceutical and body care distributors also maintenance of medical and laser devices in the territory and occupies leadership position in the area and aspired to be an agent of the best companies medical and pharmaceutical in the world">
   <meta name="author" content="salman">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href='{{ asset('animate.css/animate.css')}}'>
+  <link rel="stylesheet" href='{{ asset('css/animated.min.css')}}'>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
   <link id="css" rel="stylesheet" href='{{ asset('css/bootstrap.css')}}'>
@@ -37,15 +40,15 @@ $cssf=app()->getLocale() == "ar" ?'fas fa-angle-double-left':'fas fa-angle-doubl
   <header>
     <!-- Navbar -->
 
-    <nav class="rows  navbar navbar-expand-lg navbar-primarys fixed-top mask-custom shadow-0">
-     
+    <nav class="rows  navbar navbar-expand-lg navbar-primarys fixed-top mask-custom shadow-0 ">
+
       <a class=" navbar-brand  text-center p-0" href="{{ asset ('index')}}"><img src='{{ asset('img/LL.png')}}'></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown" style=" justify-content: space-around;">
+      <div class="collapse navbar-collapse " id="navbarNavDropdown" style=" justify-content: space-around;">
 
-        <ul class="navbar-nav  mr-auto mt-2 mt-lg-0" >
+        <ul class="navbar-nav  mr-auto mt-2 mt-lg-0 ">
           <li class="nav-item active">
             <a class="nav-link px-4 {{request()->is('index') ? 'active': ''}}" href="{{ asset ('index')}}">
               {{ __("Home") }} </a>
@@ -95,16 +98,15 @@ $cssf=app()->getLocale() == "ar" ?'fas fa-angle-double-left':'fas fa-angle-doubl
 
     <!-- Intro -->
     <div>
-      <div id="carouselExampleControls m-0" style="        max-height: 500px;
-" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner h-50">
+      <div id="carouselExampleControls m-0 " style="        max-height: 500px;
+" class="carousel slide " data-bs-ride="carousel">
+        <div class="carousel-inner h-50 ">
           <div class="carousel-item active h-50" style="    height:500px;
 ">
             <div class="d-block w-100 bg-image vh-50" style="height: 500px;
                 background-image: url('{{ asset('img/pexels-burst-374079.jpg')}}') ;background-size: cover;
                 background-position: center; 
-  background-repeat: no-repeat; 
-              ">
+                  background-repeat: no-repeat;">
 
             </div>
             <div class="text  d-md-block m-auto">
@@ -118,7 +120,7 @@ $cssf=app()->getLocale() == "ar" ?'fas fa-angle-double-left':'fas fa-angle-doubl
           <div class="carousel-item h-50" style="    height: 500px;
 ">
             <div id="intro" class="d-block w-100 bg-image vh-50" style="height: 500px;
-                background-image: url('{{ asset('img/Dg3oR21X4AEpqi4 (1).jpg')}}') ;    background-position: center; 
+                background-image: url('{{asset('img/Dg3oR21X4AEpqi4.jpg')}}') ;    background-position: center; 
   background-repeat: no-repeat; 
   background-size: cover;
               ">
@@ -221,7 +223,7 @@ $cssf=app()->getLocale() == "ar" ?'fas fa-angle-double-left':'fas fa-angle-doubl
     <!-- Section: Social media -->
 
     <!-- Section: Links  -->
-    <section class="fsct m-0">
+    <section class="fsct m-0 ">
       <div class="container  text-md-start " style="    text-align: initial;">
         <!-- Grid row -->
         <div class="row mt-3" style="    text-align: initial;">
@@ -295,15 +297,15 @@ $cssf=app()->getLocale() == "ar" ?'fas fa-angle-double-left':'fas fa-angle-doubl
   <!--End footetr-->
   <!--java script file-->
   <script src='{{ asset('javascript/jquery-3.6.0.min.js')}}'></script>
-  <script src="https://code.jquery.com/jquery-3.6.1.js"integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 
   <script src='{{ asset('javascript/app.js')}}'></script>
- 
-  
+
+
 
 </body>
 

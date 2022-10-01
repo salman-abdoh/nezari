@@ -28,8 +28,8 @@
 
     <div class="row  pb-3">
       @forelse($products as $item )
-      <div class="col-12 col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-3" >
-        <div class="card col-sm-12  h-100 mb-4 " style="overflow: hidden; background :#f0f4f8;">
+      <div class="col-12 col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-3 " >
+        <div class="card col-sm-12  h-100 mb-4  " data-wow-offset="150" style="overflow: hidden; background :#f0f4f8;">
           <img class="card-img-top" src='{{ asset('storage/'.$item->image)}}' alt="Card image cap">
           <div class="card-body" >
             <h4 class="card-title">
@@ -57,51 +57,11 @@
 
       </div>
       @endforelse
-      {{-- Pagination --}}
-      {{-- <div class="col col-md-3 ">--}}
-      {{-- <div class="card  h-100 mb-4  border-dark" style="background :#1d4c84 ; color: #f8f9fa;" >--}}
-      {{-- <img class="card-img-top" src='{{ asset('img/IMG_4102.JPG')}}' alt="Card image cap">--}}
-      {{-- <div class="card-body ">--}}
-      {{-- <h4 class="card-title">Card title</h4>--}}
-      {{-- <div class="underlinedive text-center mb-3 " style="background-color: #d62626; width: 50px;"></div>--}}
-      {{-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>--}}
-      {{-- <a href="#" class="nav-link " >Read more--}}
-      {{-- <i class="fas fa-angle-double-right " style=" color: #d62626;"></i></a>--}}
-      {{-- </div>--}}
-      {{-- </div>--}}
-      {{-- </div>--}}
-      {{-- <div class="col col-md-3 ">--}}
-      {{-- <div class="card  h-100 mb-4 " style="background :#deedff;">--}}
-      {{-- <img class="card-img-top" src="../img/bodycare.jpg" alt="Card image cap">--}}
-      {{-- <div class="card-body ">--}}
-      {{-- <h4 class="card-title">Card title</h4>--}}
-      {{-- <div class="underlinedive text-center mb-3 " style="width: 50px;"></div>--}}
-      {{-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>--}}
-      {{-- <a href="#" class="nav-link text-right" >Read more--}}
-      {{-- <i class="fas fa-angle-double-right"  style=" color: #1d4c84;"></i></a>            </div>--}}
-      {{-- </div>--}}
-      {{-- </div>--}}
-      {{-- <div class="col col-md-3 ">--}}
-      {{-- <div class="card  h-100 mb-4  text-white bg-dark">--}}
-      {{-- <div class="card-img">--}}
-      {{-- <img class="card-img-top" src="../img/pexels-anamul-rezwan-1216544.jpg" alt="Card image cap">--}}
-      {{-- <div class="card-body ">--}}
-      {{-- <h4 class="card-title">Card title</h4>--}}
-      {{-- <div class="underlinedive text-center mb-3 " style="background: #d62626;width: 50px;"></div>--}}
-      {{-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>--}}
-      {{-- <a href="#" class="nav-link text-right" >Read more--}}
-      {{-- <i class="fas fa-angle-double-right" style=" color: #d62626;"></i></a>  </div>--}}
-      {{-- </div>--}}
-      {{-- </div>--}}
-      {{-- </div>--}}
-
-    </div>
-  </div>
-  <!--campny start-->
+    
 </section>
 <!-- ======= Clients Section ======= -->
 <!-- End Clients Section -->
-<section id="services" class="services section-bg">
+<section id="services" class="services section-bg ">
   <div class="container" data-aos="fade-up">
 
     <div class="section-title">
@@ -111,8 +71,8 @@
 
     <div class="row">
       @forelse($services as $item )
-      <div class="col-lg-6 d-flex align-items-stretch mb-3  mt-3 mt-md-0 " data-aos="fade-up" data-aos-delay="200">
-        <div class="icon-box card  h-100 ">
+      <div class="col-lg-6 d-flex align-items-stretch mb-3  mt-3 mt-md-0 " >
+        <div class="icon-box card  h-100 " data-wow-delay=".5s">
           <i class="{{$item->image }}"></i>
           <h4>{{$item->{app()->getLocale().('_title')} }}</h4>
           <p class="card-text">{{$item->{app()->getLocale().('_description')} }}</p>
@@ -133,9 +93,9 @@
 <!--end services-->
 
 <!--company-->
-<!-- <section id="clients" class="clients mb-1">
+<!-- <section id="clients" class="clients mb-1 ">
       
-        <div class="container-fluid" data-aos="zoom-in">
+        <div class="container-fluid" >
           <div class="section-title container" style="text-align: left">
         <h2>{{ __("Companies") }}</h2>
         <p> {{__("Our Companies")}}</p>
@@ -161,17 +121,17 @@
     </section>-->
 <!--end company-->
 <!--contact us-->
-<section id="contact m-0 p-0" style="margin-top: 0px;" class="contact">
-  <div class="container" data-aos="fade-up">
+<section id="contact m-0 p-0" style="margin-top: 0px;" class="contact ">
+  <div class="container">
 
     <div class="section-title">
       <h2>{{__('Contact')}}</h2>
       <p> {{__('contact us here')}}</p>
     </div>
 
-    <div class="row mt-1 d-flex justify-content-end" data-aos="fade-right" data-aos-delay="100">
+    <div class="row mt-1 d-flex justify-content-end ">
 
-      <div class="col-lg-5">
+      <div class="col-lg-5  " data-wow-delay=".5s">
         <div class="info">
           <div class="address">
             <i class="fa-solid fa-street-view"></i>
@@ -196,7 +156,7 @@
 
       </div>
 
-      <div class="col-lg-6 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="100">
+      <div class="col-lg-6 mt-5 mt-lg-0 " data-wow-delay=".5s" data-aos="fade-left" data-aos-delay="100">
 
         <form method="POST" action="{{ route('index.store') }}" class="php-email-form">
           @csrf
@@ -235,11 +195,7 @@
             <small class="text-danger">{{$message }}</small>
             @enderror
           </div>
-          {{-- <div class="my-3">--}}
-          {{-- <div class="loading">Loading</div>--}}
-          {{-- <div class="error-message"></div>--}}
-          {{-- <div class="sent-message">Your message has been sent. Thank you!</div>--}}
-          {{-- </div>--}}
+          
           <div class="text-center"><button type="submit">{{__('Send Message')}}</button></div>
         </form>
 
