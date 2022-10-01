@@ -166,9 +166,35 @@ nav{
 .navbar a img{
   margin-right: 40px; HEIGHT: AUTO;WIDTH: 60PX;
 }
-.navbar .navbar-toggler{
+
+.navbar .navbar-toggler {
   border: none;
   margin-top: 5px;
+  color: #1d4c84 !important;
+}
+.navbar .navbar-toggler span{
+  border: none;
+  margin-top: 5px;
+}
+.navbar .navbar-toggler:hover{
+  border: none;
+  margin-top: 5px;
+
+}
+.navbar .navbar-toggler:focus{
+  border: none;
+  margin-top: 5px;
+  
+}
+.navbar .navbar-toggler span:hover{
+  border: none;
+  margin-top: 5px;
+ 
+}
+.navbar .navbar-toggler span:focus{
+  border: none;
+  margin-top: 5px;
+ 
 }
 .navbar-nav{
     direction: rtl;
@@ -870,10 +896,8 @@ section{
 .modal-header{border: none;}
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 991px){.navbar a img{
-  position: absolute;
-  top: 8px;
-  right: 12px; HEIGHT: AUTO;WIDTH: 60PX;
-  margin-right: 0px;
+ HEIGHT: AUTO;WIDTH: 60PX;
+  margin-right: 20px;
 }}
 @media only screen and (max-width: 700px){
   .modal-content {

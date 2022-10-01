@@ -44,33 +44,33 @@ $css=app()->getLocale() == "ar" ?'fas fa-angle-double-left':'fas fa-angle-double
     <!-- Navbar -->
     <nav class="rows  navbar navbar-expand-lg navbar-primarys fixed-top mask-custom shadow-0">
       
-      <a class=" navbar-brand  text-center p-0" href="{{ asset ('index')}}"><img src='{{ asset('img/LL.png')}}'></a>
+      <a class=" navbar-brand  text-center p-0 animate__animated  animate__zoomIn" href="{{ asset ('index')}}"><img src='{{ asset('img/LL.png')}}'></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown" style=" justify-content: space-around;">
+      <div class="collapse navbar-collapse animate__animated  animate__zoomIn" id="navbarNavDropdown" style=" justify-content: space-around;">
 
 
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
           <li class="nav-item active">
-            <a class="nav-link px-4 {{request()->is('index') ? 'active' : ''}}" href="{{ asset ('index')}}">
+            <a class="nav-link px-4 {{request()->is('index') ? 'active': ''}}" href="{{ asset ('index')}}">
               {{ __("Home") }} </a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link px-4  {{request()->is('Products') ? 'active' : ''}}" href="{{ asset ('index#products')}}">
+            <a class="nav-link px-4  {{request()->is('Products') ? 'active': ''}}" href="{{ asset ('index#products')}}">
               {{ __("Our Products") }} </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link px-4  {{request()->is('index#services') ? 'active' : ''}}" href="{{ asset ('index#services')}}">
+            <a class="nav-link px-4  {{request()->is('index#services') ? 'active': ''}}" href="{{ asset ('index#services')}}">
               {{ __("Our Services") }}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link px-4  {{request()->is('contact') ? 'active' : ''}}" href="{{ asset ('contact')}}">
+            <a class="nav-link px-4  {{request()->is('contact') ? 'active': ''}}" href="{{ asset ('contact')}}">
               {{ __("Contact Us") }} </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link px-4  {{request()->is('about') ? 'active' : ''}}" href="{{ asset ('about')}}">
+            <a class="nav-link px-4  {{request()->is('about') ? 'active':''}}" href="{{ asset ('about')}}">
               {{ __("About Us") }} </a>
           </li>
           <div class="nav-item dropdown ">
@@ -80,8 +80,7 @@ $css=app()->getLocale() == "ar" ?'fas fa-angle-double-left':'fas fa-angle-double
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="  color: #6c757d;    background :rgba(252, 252, 252,7); text-align: center;">
               <li><a style="  text-align: center;" class="dropdown-item" href="#"> @foreach (Config::get('languages') as $lang => $language)
 
-                  <a class="dropdown-item" style="text-align: center;font-size:14px; " href="{{ route('lang.switch', $lang) }}"><img style="    margin: 0;
-    width: 23px;" src='{{ asset('img/'.$language['flag-icon'])}}'> {{$language['display']}}</a>
+                  <a class="dropdown-item" style="text-align: center;font-size:14px; " href="{{ route('lang.switch', $lang) }}"><img style="    margin: 0;width: 23px;" src='{{ asset('img/'.$language['flag-icon'])}}'> {{$language['display']}}</a>
                   @endforeach</a></li>
 
             </ul>
@@ -116,7 +115,7 @@ $css=app()->getLocale() == "ar" ?'fas fa-angle-double-left':'fas fa-angle-double
 
       <!-- Right -->
       <div class="foso" style="margin: auto;">
-        <a href="https://wa.me/967773287037" target="_blank" class="text-decoration-none me-4 text-reset">
+        <a href="https://wa.me/967773234777" target="_blank" class="text-decoration-none me-4 text-reset">
           <i class="fab fa-whatsapp"></i>
         </a>
         <a href="https://www.facebook.com/salman.alwageeh" target="_blank" class="text-decoration-none me-4 text-reset">
@@ -125,7 +124,7 @@ $css=app()->getLocale() == "ar" ?'fas fa-angle-double-left':'fas fa-angle-double
         <a href="https://twitter.com/SalmanAbdoh" target="_blank" class="text-decoration-none me-4 text-reset">
           <i class="fab fa-twitter"></i>
         </a>
-        <a href="mailto:email-to@gmail.com?cc=email-cc@gmail.com&bcc=email-bcc@gmail.com&subject=Subject Using Mailto.co.uk&body=Email Using Body" target="_blank" class="text-decoration-none me-4 text-reset">
+        <a href="mailto:Mustafa.nezari@gmail.comMustafa.nezari@gmail.com Using Body" target="_blank" class="text-decoration-none me-4 text-reset">
           <i class="fab fa-google"></i>
         </a>
         <a href="" target="_blank" class="text-decoration-none me-4 text-reset">

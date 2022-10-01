@@ -16,6 +16,7 @@ $cssf=app()->getLocale() == "ar" ?'fas fa-angle-double-left':'fas fa-angle-doubl
 
   <link rel="stylesheet" href='{{ asset('animate.css/animate.css')}}'>
   <link rel="stylesheet" href='{{ asset('css/animated.min.css')}}'>
+ 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
   <link id="css" rel="stylesheet" href='{{ asset('css/bootstrap.css')}}'>
@@ -42,11 +43,11 @@ $cssf=app()->getLocale() == "ar" ?'fas fa-angle-double-left':'fas fa-angle-doubl
 
     <nav class="rows  navbar navbar-expand-lg navbar-primarys fixed-top mask-custom shadow-0 ">
 
-      <a class=" navbar-brand  text-center p-0" href="{{ asset ('index')}}"><img src='{{ asset('img/LL.png')}}'></a>
+      <a class=" navbar-brand  text-center p-0 animate__animated  animate__zoomIn" href="{{ asset ('index')}}"><img src='{{ asset('img/LL.png')}}'></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse " id="navbarNavDropdown" style=" justify-content: space-around;">
+      <div class="collapse navbar-collapse animate__animated  animate__zoomIn" id="navbarNavDropdown" style=" justify-content: space-around;">
 
         <ul class="navbar-nav  mr-auto mt-2 mt-lg-0 ">
           <li class="nav-item active">
@@ -98,12 +99,10 @@ $cssf=app()->getLocale() == "ar" ?'fas fa-angle-double-left':'fas fa-angle-doubl
 
     <!-- Intro -->
     <div>
-      <div id="carouselExampleControls m-0 " style="        max-height: 500px;
-" class="carousel slide " data-bs-ride="carousel">
+      <div id="carouselExampleControls m-0 " style="max-height: 500px;" class="carousel slide animate__animated  animate__zoomIn " data-bs-ride="carousel">
         <div class="carousel-inner h-50 ">
-          <div class="carousel-item active h-50" style="    height:500px;
-">
-            <div class="d-block w-100 bg-image vh-50" style="height: 500px;
+          <div class="carousel-item active h-50" style="height:500px;">
+            <div class="d-block w-100 bg-image vh-50 " style="height: 500px;
                 background-image: url('{{ asset('img/pexels-burst-374079.jpg')}}') ;background-size: cover;
                 background-position: center; 
                   background-repeat: no-repeat;">
@@ -117,8 +116,7 @@ $cssf=app()->getLocale() == "ar" ?'fas fa-angle-double-left':'fas fa-angle-doubl
 
 
           </div>
-          <div class="carousel-item h-50" style="    height: 500px;
-">
+          <div class="carousel-item h-50" style="height: 500px;">
             <div id="intro" class="d-block w-100 bg-image vh-50" style="height: 500px;
                 background-image: url('{{asset('img/Dg3oR21X4AEpqi4.jpg')}}') ;    background-position: center; 
   background-repeat: no-repeat; 
@@ -132,7 +130,7 @@ $cssf=app()->getLocale() == "ar" ?'fas fa-angle-double-left':'fas fa-angle-doubl
               </h3>
             </div>
           </div>
-          <div class="carousel-item  h-50" style="    height:500px;
+          <div class="carousel-item  h-50" style="height:500px;
 ">
             <div class="d-block w-100 bg-image vh-50" style="height: 500px;
                 background-image: url('{{ asset('img/cardiac-catheterization1.jpg')}}') ; background-position: center; 
@@ -198,22 +196,22 @@ $cssf=app()->getLocale() == "ar" ?'fas fa-angle-double-left':'fas fa-angle-doubl
 
       <!-- Right -->
       <div class="foso" style="margin: auto;">
-        <a href="https://wa.me/967773287037" target="_blank" class="text-decoration-none me-4 text-reset">
+        <a href="https://wa.me/967773234777" target="_blank" class="text-decoration-none me-4 text-reset">
           <i class="fab fa-whatsapp"></i>
         </a>
-        <a href="https://www.facebook.com/salman.alwageeh" target="_blank" class="text-decoration-none me-4 text-reset">
+        <a href="https://www.facebook.com/" target="_blank" class="text-decoration-none me-4 text-reset">
           <i class="fab fa-facebook-f"></i>
         </a>
-        <a href="https://twitter.com/SalmanAbdoh" target="_blank" class="text-decoration-none me-4 text-reset">
+        <a href="https://twitter.com/" target="_blank" class="text-decoration-none me-4 text-reset">
           <i class="fab fa-twitter"></i>
         </a>
         <a href="mailto:Mustafa.nezari@gmail.com" target="_blank" class="text-decoration-none me-4 text-reset">
           <i class="fab fa-google"></i>
         </a>
-        <a href="https://www.instagram.com/alwajeeh_salman" target="_blank" class="text-decoration-none me-4 text-reset">
+        <a href="https://www.instagram.com/" target="_blank" class="text-decoration-none me-4 text-reset">
           <i class="fab fa-instagram"></i>
         </a>
-        <a href="https://www.linkedin.com/in/salman-al-wageeh-37a855237/" target="_blank" class="text-decoration-none me-4 text-reset">
+        <a href="https://www.linkedin.com/in/" target="_blank" class="text-decoration-none me-4 text-reset">
           <i class="fab fa-linkedin"></i>
         </a>
 

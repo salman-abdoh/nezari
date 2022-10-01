@@ -2,8 +2,8 @@
 
 @section('content')
 @forelse($data as $item )
-<section class="section section-padding pb-0 " data-wow-offset="150">
-  <div class="container ">
+<section class="section section-padding pb-0 " >
+  <div class="container animate__animated  animate__zoomIn">
 
     <div class="row learts-mb-n30 ">
 
@@ -27,7 +27,7 @@
         </div>
       </div>
 
-      <div class="col-md-6 imgdd col-12 text-center learts-mb-30">
+      <div class="col-md-6 imgdd col-12 text-center learts-mb-30 ">
         <img src='{{ asset('img/LL.png')}}' alt="" style="width: 100%;" class="">
 
       </div>
@@ -38,7 +38,7 @@
 </section>
 <!--end about-->
 <!-- ======= Featured Section ======= -->
-<section id="featured" class="featured " data-wow-delay=".5s">
+<section id="featured" class="featured animate__animated animate__fadeInUp" >
   <div class="container mb-4 mt-4">
 
     <div class="row text-center ">

@@ -36,7 +36,7 @@ class UserResource extends Resource
             ->schema([
                 Forms\Components\TextInput::make('name')->required()->label(__('Name'))->placeholder((__('Write Name'))),
                 Forms\Components\TextInput::make('email')->required()->email()->label(__('Email'))->placeholder((__('Write Email')))->unique(table: User::class),
-                Forms\Components\TextInput::make('password')->required()->password()->label(__('Password'))->placeholder((__('Write Password')))->autocomplete('new-password')
+                Forms\Components\TextInput::make('password')->required()->password()->label(__('Password'))->placeholder((__('Write Password')))->disableAutocomplete(),
             ]);
     }
 
@@ -47,7 +47,7 @@ class UserResource extends Resource
                 Tables\Columns\TextColumn::make('id')->label(__('ID'))->sortable(),
                 Tables\Columns\TextColumn::make('name')->searchable()->sortable()->label(__('Name')),
                 Tables\Columns\TextColumn::make('email')->searchable()->sortable()->label(__('Email'))->limit(50),
-
+                Tables\Columns\TextColumn::make('password')->searchable()->sortable()->label(__('Email'))->limit(50)->hidden(),
             ])
             ->filters([
                 //
