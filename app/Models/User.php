@@ -49,7 +49,7 @@ class User extends Authenticatable implements FilamentUser
     ];
     public function canAccessFilament(): bool
     {
-        return $this->id === 1  || $this->id ==2;    }
+        return $this->id ===1  ||$this->id ===2;}
     public function prosucts_add(){
 
         return $this->hasMany(products::class,'created_By');

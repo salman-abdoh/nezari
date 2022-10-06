@@ -13,7 +13,7 @@
 @if(session('error'))
 <div class="alert alert-success alert-dismissible d-flex align-items-center fade show">
   <i class="bi-check-circle-fill"></i>
-  <strong class="mx-2">Success!</strong> >
+  <strong class="mx-2">Success!</strong> 
   {{ session('error')}}
   <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
 </div>
@@ -71,6 +71,7 @@
             </h4>
             <p>{{__("+967 773 234 777 – +967 711 234 777")}}</p>
           </div>
+          
 
 
         </div>
@@ -117,7 +118,7 @@
             @enderror
           </div>
          
-          <div class="text-center"><button type="submit">
+          <div class="text-center"><button type="submit" >
               {{ __('Send Message')}}</button></div>
         </form>
 

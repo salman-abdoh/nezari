@@ -97,7 +97,7 @@ $css=app()->getLocale() == "ar" ?'fas fa-angle-double-left':'fas fa-angle-double
 
     <!--Section: Design Block-->
   </header>
-
+  
   <!--end header-->
 
 
@@ -118,21 +118,22 @@ $css=app()->getLocale() == "ar" ?'fas fa-angle-double-left':'fas fa-angle-double
         <a href="https://wa.me/967773234777" target="_blank" class="text-decoration-none me-4 text-reset">
           <i class="fab fa-whatsapp"></i>
         </a>
-        <a href="https://www.facebook.com/salman.alwageeh" target="_blank" class="text-decoration-none me-4 text-reset">
+        <a href="https://www.facebook.com/profile.php?id=100085257036944" target="_blank" class="text-decoration-none me-4 text-reset">
           <i class="fab fa-facebook-f"></i>
         </a>
-        <a href="https://twitter.com/SalmanAbdoh" target="_blank" class="text-decoration-none me-4 text-reset">
+        <a href="https://twitter.com/NazariFor" target="_blank" class="text-decoration-none me-4 text-reset">
           <i class="fab fa-twitter"></i>
         </a>
-        <a href="mailto:Mustafa.nezari@gmail.comMustafa.nezari@gmail.com Using Body" target="_blank" class="text-decoration-none me-4 text-reset">
+        <a href="mailto:Mustafa.nezari@gmail.com" target="_blank" class="text-decoration-none me-4 text-reset">
           <i class="fab fa-google"></i>
         </a>
-        <a href="" target="_blank" class="text-decoration-none me-4 text-reset">
+        <a href="https://www.instagram.com/alnezari1/" target="_blank" class="text-decoration-none me-4 text-reset">
           <i class="fab fa-instagram"></i>
         </a>
-        <a href="" target="_blank" class="text-decoration-none me-4 text-reset">
+        <a href="https://www.linkedin.com/in/al-nazari-for-importing-medical-and-cosmetic-devices-49ba37251/" target="_blank" class="text-decoration-none me-4 text-reset">
           <i class="fab fa-linkedin"></i>
         </a>
+
 
       </div>
       <!-- Right -->

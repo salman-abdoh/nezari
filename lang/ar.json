@@ -127,8 +127,11 @@
     "Welcome To AL-NZARE":"مرحبا بك في النزاري",
  "Maintenance":"صيانة",
  "Medical Equipment":"اجهزة طبية",
- "Aesthetics":"مستلزمات تجميلية"
-    
-   
+ "Aesthetics":"مستلزمات تجميلية",
+    "Failed":" لم يتم الارسال",
+   "Success":"تم الارسال بنجاح",
+   "Thanks, For contact us":"شكراً. لتواصلك معنا",
+   "Sorry, please try again":"ناسف. يرجى المحاوله مره اخرى",
+   "Whats Up":"التواصل واتساب"
 
 }

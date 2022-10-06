@@ -1,23 +1,7 @@
 @extends('page.layouts.master')
 
 @section('content')
-@if(session('success'))
-<div class="alert alert-success alert-dismissible fade show">
-  <h4 class="alert-heading"><i class="bi-exclamation-octagon-fill"></i> Oops! </h4>
-  <p class="mb-0">
-    {{ session('success') }}.
-  </p>
-  <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-</div>
-@elseif(session('error'))
-<div class="alert alert-danger alert-dismissible fade show">
-  <h4 class="alert-heading"><i class="bi-exclamation-octagon-fill"></i> Oops! </h4>
-  <p class="mb-0">
-    {{ session('error')}}.
-  </p>
-  <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-</div>
-@endif
+
 <section class="prod " id="products">
   <div class="container">
 
@@ -42,7 +26,7 @@
               {{ $item->{app()->getLocale().('_description')} }}
             </p>
 
-            <a href="/show/{{$item['id']}}" class="nav-link   text-right">{{__('More Details')}}
+            <a href="{{ asset ('show')}}{{ '/' }}{{ $item['id']}}" class="nav-link   text-right">{{__('More Details')}}
               <?php
                  $cssf=app()->getLocale() == "ar" ?'fas fa-angle-double-left':'fas fa-angle-double-right';
                  ?>
@@ -196,7 +180,7 @@
             @enderror
           </div>
           
-          <div class="text-center"><button type="submit">{{__('Send Message')}}</button></div>
+          <div class="text-center"><button type="submit" >{{__('Send Message')}}</button></div>
         </form>
 
 

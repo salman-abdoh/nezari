@@ -96,7 +96,30 @@ $cssf=app()->getLocale() == "ar" ?'fas fa-angle-double-left':'fas fa-angle-doubl
 
     </nav>
 
-
+    @if(session('success'))
+    
+    <div style="margin: 0px;
+    margin-top: 68px;
+    border: 0;    
+    border-radius: 0;" class="alert alert-success alert-dismissible fade show">
+      <h4 class="alert-heading"><i class="bi-exclamation-octagon-fill"></i> {{__('Success') }} </h4>
+      <p class="mb-0">
+        {{ session('success') }}.
+      </p>
+      <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+    @elseif(session('error'))
+    <div style="margin: 0px;
+    margin-top: 68px;
+    border: 0;
+    border-radius: 0;" class="alert alert-danger alert-dismissible fade show">
+      <h4 class="alert-heading"><i class="bi-exclamation-octagon-fill"></i>{{ _('Failed') }}  </h4>
+      <p class="mb-0">
+        {{ session('error')}}.
+      </p>
+      <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+    @endif
     <!-- Intro -->
     <div>
       <div id="carouselExampleControls m-0 " style="max-height: 500px;" class="carousel slide animate__animated  animate__zoomIn " data-bs-ride="carousel">
@@ -199,19 +222,19 @@ $cssf=app()->getLocale() == "ar" ?'fas fa-angle-double-left':'fas fa-angle-doubl
         <a href="https://wa.me/967773234777" target="_blank" class="text-decoration-none me-4 text-reset">
           <i class="fab fa-whatsapp"></i>
         </a>
-        <a href="https://www.facebook.com/" target="_blank" class="text-decoration-none me-4 text-reset">
+        <a href="https://www.facebook.com/profile.php?id=100085257036944" target="_blank" class="text-decoration-none me-4 text-reset">
           <i class="fab fa-facebook-f"></i>
         </a>
-        <a href="https://twitter.com/" target="_blank" class="text-decoration-none me-4 text-reset">
+        <a href="https://twitter.com/NazariFor" target="_blank" class="text-decoration-none me-4 text-reset">
           <i class="fab fa-twitter"></i>
         </a>
         <a href="mailto:Mustafa.nezari@gmail.com" target="_blank" class="text-decoration-none me-4 text-reset">
           <i class="fab fa-google"></i>
         </a>
-        <a href="https://www.instagram.com/" target="_blank" class="text-decoration-none me-4 text-reset">
+        <a href="https://www.instagram.com/alnezari1/" target="_blank" class="text-decoration-none me-4 text-reset">
           <i class="fab fa-instagram"></i>
         </a>
-        <a href="https://www.linkedin.com/in/" target="_blank" class="text-decoration-none me-4 text-reset">
+        <a href="https://www.linkedin.com/in/al-nazari-for-importing-medical-and-cosmetic-devices-49ba37251/" target="_blank" class="text-decoration-none me-4 text-reset">
           <i class="fab fa-linkedin"></i>
         </a>
 

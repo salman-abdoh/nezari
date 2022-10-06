@@ -32,8 +32,7 @@
                 <button type="button" class="btn-close button-danger" style=" font-size: 44px; " data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <!-- Modal Content (The Image) -->
-              <img class="modal-content" id="img01" style="width:40%;    height: 84%;
-              ">
+              <img class="modal-content" id="img01" >
 
               <!-- Modal Caption (Image Text) -->
               <div id="caption">{{ $data->{app()->getLocale().('_title')} }}</div>
@@ -45,8 +44,7 @@
                   <button type="button" class="bb btn-close button-danger" style=" font-size: 44px;" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <!-- Modal Content (The Image) -->
-                <img class="modal-content" id="img02" style="width:40% ;    height: 80%;
-                ">
+                <img class="modal-content" id="img02" >
   
                 <!-- Modal Caption (Image Text) -->
                 <div id="caption2">{{ $data->{app()->getLocale().('_title')} }}</div>

@@ -76,9 +76,9 @@ class ContactController extends Controller
 
 
         if($u->save()){
-            return redirect('/index')->with("success","Thanks, For contact us");
+            return redirect('/index')->with("success",__("Thanks, For contact us"));
         }
-        return back()->with("error","Sorry, please try again");
+        return back()->with("error",__("Sorry, please try again"));
 
 
     }

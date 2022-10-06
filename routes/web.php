@@ -24,7 +24,7 @@ Route::get('lang/{lang}', ['as' => 'lang.switch', 'uses' => 'App\Http\Controller
 Route::get('/show/{id}', [\App\Http\Controllers\indexController::class,'showproduct'])->name('products_data');
 
 Route::resource('contact', \App\Http\Controllers\ContactController::class);
-Route::resource('about', \App\Http\Controllers\aboutController::class);
+Route::resource('about', \App\Http\Controllers\AboutController::class);
 Route::resource('index', \App\Http\Controllers\indexController::class);
 // });
 

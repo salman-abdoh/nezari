@@ -166,7 +166,9 @@ nav{
 .navbar a img{
   margin-right: 40px; HEIGHT: AUTO;WIDTH: 60PX;
 }
-
+.alert{
+  direction: rtl;
+}
 .navbar .navbar-toggler {
   border: none;
   margin-top: 5px;
