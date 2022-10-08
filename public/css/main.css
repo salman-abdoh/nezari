@@ -699,7 +699,7 @@ h1{
   height: 90%;
   position: absolute;
   top: -10px;
-  right: -10px;
+  right: 0px;
   width: 70%;
 }
 
@@ -877,6 +877,7 @@ h1{
     width: 100%;
     
   }
+ 
   
   .carousel-inner .carousel-item .text h3{
     background: rgba(255, 255, 255, 0.493);
@@ -1038,3 +1039,40 @@ footer section  p {
  
   width: 101%;
   }
+  #about {
+    padding-top: 60px !important;
+    
+  }
+  @media only screen and (max-width: 767px){
+    #about {
+       padding-top: 13px !important;
+       
+     }}
+     @media only screen and (max-width: 400px){
+      .row .imgdd{
+        padding: 0;
+      }
+      .row .imgdd img{
+     }
+      .row .imgdd::before {
+        content: '';
+      display: block;
+      border-bottom: #79a2be 20px solid;
+      border-left: #79a2be 20px solid;
+      height: 84%;
+      position: absolute;
+      bottom: 0px;
+      left: 22px;
+      width: 47%;
+      }
+      .row .imgdd::after {
+
+     content: '';
+     display: block;
+     border-top: #043c6d 20px solid;
+     border-right: #043c6d 20px solid;
+     height: 90%;
+     position: absolute;
+     top: -25px;
+     right: 20px;
+     width: 60%;}}

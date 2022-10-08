@@ -6,28 +6,22 @@ $css=app()->getLocale() == "ar" ?'fas fa-angle-double-left':'fas fa-angle-double
 ?>
 <html>
 
-<head>
-  <title>Nezari</title>
-  <meta charset="UTF-8">
-  <meta name="keywords" content="Nezari,منتجات, drogs, Products">
-  <meta name="description" content="Al-Nezari for Import is considered one of the majors medical equipment, cosmetic, pharmaceutical and body care distributors also maintenance of medical and laser devices in the territory and occupies leadership position in the area and aspired to be an agent of the best companies medical and pharmaceutical in the world">
-  <meta name="author" content="salman">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <link rel="stylesheet" href='{{ asset('animate.css/animate.css')}}'>
-  <link rel="stylesheet" href='{{ asset('css/animated.min.css')}}'>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
-  <link id="css" rel="stylesheet" href='{{ asset('css/bootstrap.css')}}'>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-  <link id="css" rel="stylesheet" href='{{ asset('css/'. $lang )}}'>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-  <link href='{{ asset('fonts/fontawesome-free-6.0.0-beta3-web/css/all.css')}}' rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&family=Tajawal:wght@500&display=swap" rel="stylesheet">
-</head>
+  <head>
+    <title>Nezari</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Nezari,منتجات, drogs, Products">
+    <meta name="description" content="Al-Nezari for Import is considered one of the majors medical equipment, cosmetic, pharmaceutical and body care distributors also maintenance of medical and laser devices in the territory and occupies leadership position in the area and aspired to be an agent of the best companies medical and pharmaceutical in the world">
+    <meta name="author" content="salman">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href='{{ asset('animate.css/animate.css')}}'>
+    <link rel="stylesheet" href='{{ asset('css/animated.min.css')}}'> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link id="css" rel="stylesheet" href='{{ asset('css/'. $lang )}}'>
+    <link href='{{ asset('fonts/fontawesome-free-6.0.0-beta3-web/css/all.css')}}' rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&family=Tajawal:wght@500&display=swap" rel="stylesheet">
+  </head>
 
 <body dir="{{(App::isLocale('ar') ? 'rtl' : 'ltr')}}">
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center active"><i class="fa fa-arrow-up"></i></a>
@@ -217,6 +211,11 @@ $css=app()->getLocale() == "ar" ?'fas fa-angle-double-left':'fas fa-angle-double
   <!--End footetr-->
   <!--java script file-->
   <script src='{{ asset('javascript/jquery-3.6.0.min.js')}}'></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+
   <script src='{{ asset('javascript/app.js')}}'></script>
 </body>
 

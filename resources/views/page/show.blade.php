@@ -22,8 +22,21 @@
             </div>
             @foreach(($data->images) as $path)
             <div class="carousel-item h-50">
+              <div id="myModal2" class="modal">
+
+                <!-- The Close Button -->
+                <div class="modal-header">
+                  <button type="button" class="bb btn-close button-danger" style=" font-size: 44px;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!-- Modal Content (The Image) -->
+                <img class="modal-content" id="img02" >
+  
+                <!-- Modal Caption (Image Text) -->
+                <div id="caption2">{{ $data->{app()->getLocale().('_title')} }}</div>
+              </div>
               <img id="myImg2" src="{{ asset('storage/'.$path)}}" alt="nezari" class="d-block" style="width:100%">
             </div>
+           
             @endforeach
             <div id="myModal" class="modal">
 

@@ -9,12 +9,29 @@ $('.language').click(function(){
   
     css.href = "xyz.com";
   });
+  // ------------------------------------------------------------------------------------
   var modal = document.getElementById("myModal");
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
 var img = document.getElementById("myImg");
 var modalImg = document.getElementById("img01");
+// var navbar =document.getElementById("navto");
 
+// var navbarNavDropdown = document.getElementById("navbarNavDropdown");
+
+// navbar.onclick = function(){
+//   navbarNavDropdown.classList.remove('collapse navbar-collapse animate__animated  animate__zoomIn');
+
+//   if ( navbarNavDropdown.classList.contains('navbar-collapse animate__animated animate__zoomIn collapse show')) {
+//   navbarNavDropdown.classList.toggle('collapse navbar-collapse animate__animated  animate__zoomIn');
+//   navbarNavDropdown.classList.remove('show');
+//   navbarNavDropdown.style.display = "none";}
+
+
+// navbarNavDropdown.classList.toggle('MyClass');
+ 
+
+  // }
 img.onclick = function(){
   modal.style.display = "block";
   modalImg.src = this.src;
@@ -35,7 +52,7 @@ $(document).click(function (e) {
   }
 
 });
-
+// ------------------------------------------------------------------------------------
 var modal2 = document.getElementById("myModal2");
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption

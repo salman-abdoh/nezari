@@ -2,7 +2,7 @@
 
 @section('content')
 @forelse($data as $item )
-<section class="section section-padding pb-0 " >
+<section class="section about section-padding pb-0" id="about" >
   <div class="container animate__animated  animate__zoomIn">
 
     <div class="row learts-mb-n30 ">
