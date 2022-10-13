@@ -50,8 +50,10 @@ class AboutResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('id')->Label('ID')->sortable(),
-                Tables\Columns\TextColumn::make('ar_intro')->searchable()->sortable()->Label('AR Intro'),
-                Tables\Columns\TextColumn::make('ar_vision')->searchable()->sortable()->Label('AR Vision')->limit(50),
+                Tables\Columns\TextColumn::make((__('en_intro')))->searchable()->sortable()->Label(__('Intro'))->limit(50),
+                Tables\Columns\TextColumn::make((__('en_vision')))->searchable()->sortable()->Label(__('Vision'))->limit(50),
+                Tables\Columns\TextColumn::make((__('en_target')))->searchable()->sortable()->Label(__('Target'))->limit(50),
+                Tables\Columns\TextColumn::make((__('en_mision')))->searchable()->sortable()->Label(__('Mision'))->limit(50),
 
             ])
             ->filters([

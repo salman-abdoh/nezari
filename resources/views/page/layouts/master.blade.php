@@ -9,7 +9,7 @@ $cssf=app()->getLocale() == "ar" ?'fas fa-angle-double-left':'fas fa-angle-doubl
 <head>
   <title>Nezari</title>
   <meta charset="UTF-8">
-  <meta name="keywords" content="Nezari,منتجات, drogs, Products">
+  <meta name="keywords" content="nezari,alnezari,النزاري للصيانه,النزاري للاجهزه,منتجات, النزاري للاستيراد,مصطفى النزاري, Products">
   <meta name="description" content="Al-Nezari for Import is considered one of the majors medical equipment, cosmetic, pharmaceutical and body care distributors also maintenance of medical and laser devices in the territory and occupies leadership position in the area and aspired to be an agent of the best companies medical and pharmaceutical in the world">
   <meta name="author" content="salman">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">

@@ -110,7 +110,11 @@
     "Information":"الموقع الالكتروني",
     "Send Message":"إرسال",
     "AL-Nezari":"النزاري",
-    
+    "en_intro":"ar_intro",
+    "en_target":"ar_target",
+    "en_vision":"ar_vision",
+    "en_mision":"ar_mision",
+    "Intro":"المقدمه",
     "Target":"هدفنا",
     "Vision":"رؤيتنا",
     "Mission":"قيمنا",
